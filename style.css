@@ -15,8 +15,14 @@ h1 {
     margin: 20px 0;
 }
 
-#speedometer {
+.speedometer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
+}
+
+#speedometer {
     border: 5px solid black;
     border-radius: 50%;
     background: radial-gradient(circle, #ddd 0%, #bbb 100%);
