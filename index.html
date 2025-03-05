@@ -11,11 +11,23 @@
     <h1>До следующего этапа Формулы-1 осталось:</h1>
     <div id="countdown">Загрузка...</div>
 
-    <!-- Спидометр -->
-    <svg id="speedometer" width="300" height="300" viewBox="0 0 300 300">
-        <circle cx="150" cy="150" r="140" stroke="black" stroke-width="5" fill="white"/>
-        <line id="needle" x1="150" y1="150" x2="150" y2="30" stroke="black" stroke-width="5"/>
-    </svg>
+    <!-- Циферблат -->
+    <div class="speedometer-container">
+        <svg id="speedometer" width="300" height="300" viewBox="0 0 300 300">
+            <!-- Внешний круг -->
+            <circle cx="150" cy="150" r="140" stroke="black" stroke-width="5" fill="white"/>
+            <!-- Внутренний круг -->
+            <circle cx="150" cy="150" r="120" stroke="black" stroke-width="3" fill="none"/>
+            
+            <!-- Стрелка -->
+            <line id="needle" x1="150" y1="150" x2="150" y2="80" stroke="black" stroke-width="5"/>
+
+            <!-- Цифры обратного отсчёта -->
+            <text id="daysLeft" x="150" y="170" font-size="40" text-anchor="middle" fill="black" font-family="Courier New, monospace">
+                11
+            </text>
+        </svg>
+    </div>
 
     <script src="script.js"></script>
 </body>
