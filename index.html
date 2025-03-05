@@ -3,23 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Обратный отсчет до следующего этапа Формулы-1</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
-            text-align: center;
-            padding: 50px;
-        }
-        .countdown {
-            font-size: 2em;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Обратный отсчёт до Формулы-1</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <h1>До следующего этапа Формулы-1 осталось:</h1>
-    <div class="countdown" id="countdown"></div>
+    <div id="countdown">Загрузка...</div>
+
+    <!-- Спидометр -->
+    <svg id="speedometer" width="300" height="300" viewBox="0 0 300 300">
+        <circle cx="150" cy="150" r="140" stroke="black" stroke-width="5" fill="white"/>
+        <line id="needle" x1="150" y1="150" x2="150" y2="30" stroke="black" stroke-width="5"/>
+    </svg>
 
     <script src="script.js"></script>
 </body>
